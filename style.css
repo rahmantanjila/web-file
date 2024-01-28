@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: border-box;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+a{
+    text-decoration: none ;
+}
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background: honeydew;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: lightskyblue;
+    cursor: pointer;
+}
+.logo::first-letter{
+    font-size: 40px;
+    border: 5px solid rgb(0, 0, 0);
+    border-right: transparent;
+    padding-left: 5px;
+    color: lightskyblue;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position:  relative;
+    padding: 5px 0;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #fd4766;
+}
+nav ul li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: #fd4766;
+    transition: 3s;
+}
+nav ul li a:hover::after{
+    width: 100;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #fd4766;
+    padding: 10px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all. 4s ease-in-out;
+    border: 2px solid #fd4766;
+}
+.btn:hover{
+    background: transparent;
+    color: #fd4766;
+}
+.detail{
+    position: absolute;
+    top:35%;
+    left:8%;
+}
+.detail h1{
+    color: black;
+    font-size: 70px;
+    font-weight: 700;
+    line-height:70px ;
+}
+
+.image img{
+    display: block;
+    width: 100;
+    height: auto;
+}
+
+.image{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    top: 200px;
+
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: var(--color-black-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;;
+    bottom: 260px;
+    right: 520px;
+ }
+ 
+ .social-icon,
+ .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+ }
+ 
+ .social-icon__item,
+ .menu__item {
+    list-style: none;
+ }
+ 
+ .social-icon__link {
+    font-size: 2rem;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+ }
+ .social-icon__link:hover {
+    transform: translateY(-10px);
+    ;
+ }
+ 
+ 
+ 
